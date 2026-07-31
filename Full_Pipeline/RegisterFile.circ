@@ -2278,6 +2278,7 @@
     </comp>
     <comp lib="4" loc="(390,300)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
       <a name="width" val="32"/>
     </comp>
     <wire from="(220,440)" to="(230,440)"/>
