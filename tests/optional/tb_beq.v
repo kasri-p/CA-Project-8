@@ -143,11 +143,13 @@ module tb;
             );
         end
 
-        if (fail_flag == 0)
+        if (fail_flag == 0) begin
             $display("ACCEPTED_BEQ_ID_NO_HAZARD");
-        else
+            $finish(0);
+        end
+        else begin
             $display("FAILED_BEQ_ID_NO_HAZARD");
-
-        $finish;
+            $finish(1);
+        end
     end
 endmodule
